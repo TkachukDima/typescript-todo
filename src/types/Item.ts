@@ -1,5 +1,6 @@
 export interface Item {
     id: number,
     content: string,
-    done: boolean
+    done: boolean,
+    delayTime: number
 }

@@ -32,7 +32,8 @@ class AddNewItem extends Component<IAddNewItem> {
         this.props.addNewItem({
             id,
             content,
-            done: false
+            done: false,
+            delayTime: 0
         })
     }
     

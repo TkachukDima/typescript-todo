@@ -1,6 +1,8 @@
 import { Item } from "../types/Item";
-import { ADD_NEW_ITEM, DELETE_ITEM, TOGGLE_DONE } from "../types/actions";
+import { DelayItem } from "../types/DelayItem";
+import { ADD_NEW_ITEM, DELETE_ITEM, TOGGLE_DONE, DELAY_ITEM } from "../types/actions";
 import {AppAction} from '../types/actions';
+
 
 export const addNewItem = (item: Item): AppAction => {
     return {
@@ -20,6 +22,13 @@ export const toggleDone = (id: number): AppAction => {
     return {
         type: TOGGLE_DONE,
         payload: id
+    }
+}
+
+export const delayItem = ( currItem: any): AppAction => {
+    return {
+        type: DELAY_ITEM,
+        payload: currItem
     }
 }
 

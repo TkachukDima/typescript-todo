@@ -12,8 +12,7 @@ interface ITodoList {
 class TodoList extends Component<ITodoList> {
     
     render() {
-        // console.log(this.props);
-        const elements = this.props.items.map( (el) => {
+       const elements = this.props.items.map( (el) => {
             return (
                 <li key={el.id}  >
                     <TodoListItem  item={el}  />

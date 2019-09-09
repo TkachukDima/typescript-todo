@@ -6,6 +6,7 @@ import TodoList from './TodoList';
 
 class App extends Component {
   render() {
+    // console.log(this.props.children);
     return (
       <div className="container">
         <Header />

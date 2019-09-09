@@ -12,9 +12,55 @@
 .item {
     display: flex;
     justify-content: space-between;
+    position: relative;
     max-width: 250px;
     width: 100%;
     margin-bottom: 15px;
     padding: 5px;
     border-bottom: 1px solid #000;
+}
+
+.item_done {
+    text-decoration: line-through;
+}
+
+.item_delay {
+    color: grey;
+    position: relative;
+}
+
+.item_delay::after {
+    content: "delay";
+    position: absolute;
+    top: -10px;
+    right: -40px;
+}
+
+.modal_Inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: grid;
+    justify-content: center;
+    align-items: center
+}
+
+.modal_Element {
+    width: 320px;
+    min-height: 200px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #fff;
+
+}
+
+.modal_Element button {
+    min-width: 80px;
+    height: 30px;
+    margin: 15px;
+    border-radius: 5px;
 }
